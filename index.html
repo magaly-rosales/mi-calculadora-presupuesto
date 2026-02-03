@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Simulador de Presupuesto</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="estilo.css">
 
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="manifiesto.json">
 
     <script>
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('sw.js');
       }
     </script>
-    
 </head>
 <body>
 
@@ -37,8 +37,7 @@
         </div>
 
         <h3>Historial de Movimientos</h3>
-        <ul id="list" class="list">
-            </ul>
+        <ul id="list" class="list"></ul>
 
         <h3>Agregar nueva transacción</h3>
         <form id="form">
@@ -55,12 +54,10 @@
         
         <div class="reporte-container">
             <button class="btn btn-secondary" onclick="generarBoleto()">Generar Resumen de Cuenta</button>
-            <div id="boleto-salida" class="boleto" style="display: none;">
+            <div id="boleto-salida" class="boleto" style="display: none;"></div>
         </div>
-
     </div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
